@@ -33,6 +33,6 @@ This package contains code which will run SigOpt experiments in MATLAB.
 
 7. Run the `sigopt_example.m` script.
 
-8. View your experiment's progress here [here](www.sigopt.com/experiments)!
+8. View your experiment's progress [here](www.sigopt.com/experiments)!
 
-### Now make a copy of `sigopt_example.m`, rename and customize it to make your own simulations! 
+#### Now make a copy of `sigopt_example.m`, rename and customize it to make your own simulations! 
