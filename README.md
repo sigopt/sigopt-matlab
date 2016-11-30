@@ -20,8 +20,8 @@ This package contains code which will run SigOpt experiments in MATLAB.
   - Add this folder/toolbox to the MATLAB `path`.
 
 5. Add API key to file `api_token.secret`. 
-  - If not already done, sign up for [SigOpt](www.sigopt.com).
-  - While logged in, copy your API token from [here](https://sigopt.com/docs/overview/python).
+  - If not already done, sign up for [SigOpt](http://www.sigopt.com).
+  - While logged in, copy your API token from [here](http://sigopt.com/docs/overview/python).
   - Create a text file with the name `api_token.secret` in the working directory.
   - Add one line to this file: `{"API_TOKEN": "<client_api_token>"}`
 
@@ -33,6 +33,6 @@ This package contains code which will run SigOpt experiments in MATLAB.
 
 7. Run the `sigopt_example.m` script.
 
-8. View your experiment's progress [here](www.sigopt.com/experiments)!
+8. View your experiment's progress [here](http://www.sigopt.com/experiments)!
 
 #### Now make a copy of `sigopt_example.m`, rename and customize it to make your own simulations! 
