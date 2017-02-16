@@ -36,3 +36,12 @@ This package contains code which will run SigOpt experiments in MATLAB.
 8. View your experiment's progress [here](http://www.sigopt.com/experiments)!
 
 #### Now make a copy of `sigopt_example.m`, rename and customize it to make your own simulations! 
+
+## Troubleshooting
+
+- Change directory to be in the `sigopt_matlab` dir
+- Make sure the path to sigopt is in py.sys.path
+  With `insert(py.sys.path, int32(0), '/usr/local/lib/python2.7/site-packages')`
+- If you are having trouble with your Python installation, visit these
+  [Matlab Python docs](https://www.mathworks.com/help/matlab/matlab_external/undefined-variable-py-or-function-py-command.html)
+  for more information
