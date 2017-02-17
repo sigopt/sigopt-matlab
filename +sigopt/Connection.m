@@ -1,12 +1,12 @@
 classdef Connection
   properties
-    client_token
+    api_token
     py_connection
   end
   methods
-    function obj = Connection(token)
-      obj.client_token = token;
-      obj.py_connection = py.sigopt.Connection(token, 'sigopt-matlab/1.0.0');
+    function obj = Connection(api_token)
+      obj.api_token = api_token;
+      obj.py_connection = py.sigopt.Connection(api_token, 'sigopt-matlab/1.0.0');
     end
 
     function resource = experiments(obj, id)

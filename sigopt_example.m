@@ -2,6 +2,7 @@ import sigopt.Connection
 
 conn = Connection('<YOUR API TOKEN HERE>');
 
+% Create your experiment
 experiment = conn.experiments().create(struct( ...
   'name', 'Franke Optimization (MATLAB)', ...
   'parameters', [ ...
@@ -23,21 +24,19 @@ experiment = conn.experiments().create(struct( ...
     ) ...
   ] ...
 ))
-
 experiment_id = experiment.id;
 
-% optimize!
+% Begin the optimization loop
 num_iterations = 30;
 for n = 1:num_iterations
-  % get suggestion assignments (point in the domain)
+  % Receive a suggestion
   suggestion = conn.experiments(experiment_id).suggestions().create()
-  suggestion_id = suggestion.id;
+  % Evaluate your metric
   assignments = suggestion.assignments;
-  % plug in the point into your function/simulation
   value = objective_function(assignments.x, assignments.y)
-  % report observed value
+  % Report an observation
   observation = conn.experiments(experiment_id).observations().create(struct( ...
-    'suggestion', suggestion_id, ...
+    'suggestion', suggestion.id, ...
     'value', value ...
   ))
 end

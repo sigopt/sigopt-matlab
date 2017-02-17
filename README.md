@@ -1,8 +1,8 @@
-## MATLAB + SIGOPT
+# MATLAB + SIGOPT
 
 This package contains code which will run SigOpt experiments in MATLAB.
 
-## Franke Example, Windows 7
+## Getting Started
 
 1. Install [Python] (https://www.python.org/downloads/) on MATLAB workstation.
   - See [here](https://www.mathworks.com/help/matlab/matlab_external/system-requirements-for-matlab-engine-for-python.html) for MATLAB Python requirements (i.e. 64-bit for Windows workstations).
@@ -26,7 +26,7 @@ This package contains code which will run SigOpt experiments in MATLAB.
 
 5. Update the `sigopt_example.m` script to include your SigOpt API token (available at https://sigopt.com/user/profile)
 
-6. Run the `sigopt_example.m` script.
+6. Within Matlab, run the `sigopt_example.m` script (with `run(sigopt_example.m)`)
 
 7. View your experiment's progress [here](http://www.sigopt.com/experiments)!
 

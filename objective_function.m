@@ -1,4 +1,5 @@
 % Example function - replace this with the function you are trying to optimize
+% For example purposes we will use Franke's function: https://www.sfu.ca/~ssurjano/franke2d.html
 function value = objective_function(assignments)
   x = assignments.x;
   y = assignments.y;
