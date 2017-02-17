@@ -1,6 +1,6 @@
 import sigopt.Connection
 
-conn = Connection('<YOUR API TOKEN HERE>')
+conn = Connection('<YOUR API TOKEN HERE>');
 
 experiment = conn.experiments().create(struct( ...
   'name', 'Franke Optimization (MATLAB)', ...
@@ -28,7 +28,7 @@ experiment_id = experiment.id;
 
 % optimize!
 num_iterations = 30;
-for n = [1:num_iterations]
+for n = 1:num_iterations
   % get suggestion assignments (point in the domain)
   suggestion = conn.experiments(experiment_id).suggestions().create()
   suggestion_id = suggestion.id;
