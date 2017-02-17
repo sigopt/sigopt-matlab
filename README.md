@@ -10,13 +10,13 @@ This package contains code which will run SigOpt experiments in MATLAB.
 2. Ensure [`pip`](https://pip.pypa.io/en/stable/installing/) is installed. 
   - It comes natively with Python installations from python.org.
 
-3. Install the SigOpt Python wrapper.
+3. Install the SigOpt Python wrapper. You will need version 2.8.0 or higher
    - On Unix / OS X
-      - `pip install sigopt`
+      - `pip install "sigopt>=2.8.0"`
    - On Windows:
       - In the Start Menu, open the command prompt (`cmd`).
       - Enter the appropriate command to set the path variable (for example, `path=%path%;C:\python27`)
-      - `python -m pip install sigopt`
+      - `python -m pip install "sigopt >= 2.8.0"`
 
 4. Setup MATLAB
     - Open MATLAB.
