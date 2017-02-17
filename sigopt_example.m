@@ -1,6 +1,6 @@
 import sigopt.Connection
 
-conn = Connection('<YOUR CLIENT TOKEN HERE>')
+conn = Connection('<YOUR API TOKEN HERE>')
 
 experiment = conn.experiments().create(struct( ...
   'name', 'Franke Optimization (MATLAB)', ...
@@ -24,19 +24,19 @@ experiment = conn.experiments().create(struct( ...
   ] ...
 ))
 
-experiment_id = experiment.id
+experiment_id = experiment.id;
 
 % optimize!
-num_iterations = 30
+num_iterations = 30;
 for n = [1:num_iterations]
   % get suggestion assignments (point in the domain)
   suggestion = conn.experiments(experiment_id).suggestions().create()
-  suggestion_id = suggestion.id
-  assignments = suggestion.assignments
+  suggestion_id = suggestion.id;
+  assignments = suggestion.assignments;
   % plug in the point into your function/simulation
   value = franke(assignments.x, assignments.y)
   % report observed value
-  conn.experiments(experiment_id).observations().create(struct( ...
+  observation = conn.experiments(experiment_id).observations().create(struct( ...
     'suggestion', suggestion_id, ...
     'value', value ...
   ))
@@ -47,5 +47,5 @@ function value = franke(x,y)
   value = exp(-((9*x-2).^2 + (9*y-2).^2)/4)/2 + ...
           3*exp(-(9*x+1).^2/49 - (9*y+1)/10)/4 + ...
           exp(-((9*x-7).^2 + (9*y-3).^2)/4)/2 - ...
-          exp(-((9*x-4).^2 + (9*y-7).^2))/5
+          exp(-((9*x-4).^2 + (9*y-7).^2))/5;
 end

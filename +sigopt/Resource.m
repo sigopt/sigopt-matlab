@@ -8,53 +8,53 @@ classdef Resource
     end
 
     function resource = suggestions(obj, id)
-      import sigopt.Resource
-      entity = obj.py_resource.get_bound_entity('suggestions')
+      import sigopt.Resource;
+      entity = obj.py_resource.get_bound_entity('suggestions');
       if nargin == 2
-        args = pyargs('id', id)
+        args = pyargs('id', id);
       else
-        args = pyargs()
+        args = pyargs();
       end
-      resource = Resource(entity(args))
+      resource = Resource(entity(args));
     end
 
     function resource = observations(obj, id)
-      import sigopt.Resource
-      entity = obj.py_resource.get_bound_entity('observations')
+      import sigopt.Resource;
+      entity = obj.py_resource.get_bound_entity('observations');
       if nargin == 2
-        args = pyargs('id', id)
+        args = pyargs('id', id);
       else
-        args = pyargs()
+        args = pyargs();
       end
-      resource = Resource(entity(args))
+      resource = Resource(entity(args));
     end
 
     function response = fetch(obj, params)
       if nargin < 2
-        params = struct()
+        params = struct();
       end
-      response = obj.call('fetch', params)
+      response = obj.call('fetch', params);
     end
 
     function response = create(obj, params)
       if nargin < 2
-        params = struct()
+        params = struct();
       end
-      response = obj.call('create', params)
+      response = obj.call('create', params);
     end
 
     function response = update(obj, params)
       if nargin < 2
-        params = struct()
+        params = struct();
       end
-      response = obj.call('update', params)
+      response = obj.call('update', params);
     end
 
     function response = delete(obj, params)
       if nargin < 2
-        params = struct()
+        params = struct();
       end
-      response = obj.call('delete', params)
+      response = obj.call('delete', params);
     end
   end
 
