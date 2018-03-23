@@ -18,5 +18,9 @@ classdef Connection
       end
       resource = Resource(obj.py_connection.experiments(args));
     end
+    
+    function set_api_url(obj, api_url)
+        obj.py_connection.set_api_url(api_url)
+    end
   end
 end
