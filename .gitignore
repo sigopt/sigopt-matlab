@@ -1,3 +1,6 @@
 *.secret
 *.pyc
 /venv
+
+# Backup Matlab files
+*~
