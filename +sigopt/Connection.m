@@ -18,5 +18,17 @@ classdef Connection
       end
       resource = Resource(obj.py_connection.experiments(args));
     end
+    
+    function set_api_url(obj, api_url)
+        obj.py_connection.set_api_url(api_url);
+    end
+    
+    function set_verify_ssl_certs(obj, verify_ssl_certs)
+        obj.py_connection.set_verify_ssl_certs(verify_ssl_certs);
+    end
+    
+    function set_proxies(obj, proxies)
+        obj.py_connection.set_proxies(proxies)
+    end
   end
 end
