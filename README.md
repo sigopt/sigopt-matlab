@@ -33,7 +33,7 @@ This package contains code which will run SigOpt experiments in MATLAB.
 8. Within Matlab, run the `sigopt_example.m` script 
 
 ```matlab
-run(sigopt_example.m)
+run("sigopt_example.m")
 ```
 
 9. View your experiment's progress [here](http://www.sigopt.com/experiments)!
