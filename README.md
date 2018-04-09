@@ -24,13 +24,21 @@ This package contains code which will run SigOpt experiments in MATLAB.
         - On Unix / OS X it should be something like `pyversion /usr/bin/python`. 
         - On Windows it should be something like `pyversion C:\Python27\python`.
 
-5. Update the `sigopt_example.m` script to include your SigOpt API token (available at https://sigopt.com/user/profile)
+5. Download or clone this repository into the folder or your choice.
 
-6. Within Matlab, run the `sigopt_example.m` script (with `run(sigopt_example.m)`)
+6. [Set the path](https://www.mathworks.com/help/matlab/matlab_env/add-remove-or-reorder-folders-on-the-search-path.html) in MATLAB to include the `sigopt-matlab` folder from the previous step.
 
-7. View your experiment's progress [here](http://www.sigopt.com/experiments)!
+7. Open the `sigopt_example.m` script and update it to include your SigOpt API token (available at https://sigopt.com/tokens/info)
 
-#### Now make a copy of `sigopt_example.m`, rename and customize it to make your own simulations! 
+8. Within Matlab, run the `sigopt_example.m` script 
+
+```matlab
+run(sigopt_example.m)
+```
+
+9. View your experiment's progress [here](http://www.sigopt.com/experiments)!
+
+**Now make a copy of `sigopt_example.m`, rename and customize it to make your own simulations!**
 
 ## Troubleshooting
 
