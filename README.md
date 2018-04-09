@@ -4,11 +4,11 @@ This package contains code which will run SigOpt experiments in MATLAB.
 
 ## Getting Started
 
-1. Install [Python] (https://www.python.org/downloads/) on MATLAB workstation.
-  - See [here](https://www.mathworks.com/help/matlab/matlab_external/system-requirements-for-matlab-engine-for-python.html) for MATLAB Python requirements (i.e. 64-bit for Windows workstations).
+1. Install [Python](https://www.python.org/downloads/) on MATLAB workstation.
+   - See [here](https://www.mathworks.com/help/matlab/matlab_external/system-requirements-for-matlab-engine-for-python.html) for MATLAB Python requirements (i.e. 64-bit for Windows workstations).
 
 2. Ensure [`pip`](https://pip.pypa.io/en/stable/installing/) is installed. 
-  - It comes natively with Python installations from python.org.
+   - It comes natively with Python installations from python.org.
 
 3. Install the SigOpt Python wrapper. You will need version 2.8.0 or higher
    - On Unix / OS X
@@ -42,9 +42,8 @@ run(sigopt_example.m)
 
 ## Troubleshooting
 
-- Make sure the path to the `sigopt` python package is in py.sys.path
+Make sure the path to the `sigopt` python package is in py.sys.path:
   - On Unix / OS X, you may want to run `insert(py.sys.path, int32(0), '/usr/local/lib/python2.7/site-packages')`
   - On Windows, you may want to run `insert(py.sys.path, int32(0), 'C:\python27/site-packages')`
-- You can also visit
-  [Matlab Python docs](https://www.mathworks.com/help/matlab/matlab_external/undefined-variable-py-or-function-py-command.html)
-  for more information
+
+For more information on integrating Python with Matlab, visit the [Matlab Python docs](https://www.mathworks.com/help/matlab/matlab_external/undefined-variable-py-or-function-py-command.html).
