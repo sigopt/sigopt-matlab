@@ -1,4 +1,4 @@
-# MATLAB + SIGOPT
+# SigOpt MATLAB API
 
 This package contains code which will run SigOpt experiments in MATLAB.
 
