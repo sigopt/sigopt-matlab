@@ -1,7 +1,6 @@
 # SigOpt MATLAB API
 
 This is the [SigOpt](https://sigopt.com) MATLAB API client.
-
 Use this to natively call SigOpt API endpoints to create experiments and report data.
 
 For more help getting started with SigOpt and MATLAB, check out the [docs](https://sigopt.com/docs/overview/matlab).
@@ -44,7 +43,6 @@ git clone git@github.com:sigopt/sigopt-matlab.git
 
 ### Authentication
 Sign up for an account at [https://sigopt.com](https://sigopt.com).
-
 In order to use the API, you'll need your API token from the [API tokens page](https://sigopt.com/tokens).
 
 Open the `sigopt_example.m` script and update it to include your [SigOpt API token](https://sigopt.com/tokens/info).
