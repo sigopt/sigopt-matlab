@@ -26,7 +26,7 @@ This package contains code which will run SigOpt experiments in MATLAB.
 
 5. [Set the path](https://www.mathworks.com/help/matlab/matlab_env/add-remove-or-reorder-folders-on-the-search-path.html) in MATLAB to include the `sigopt-matlab` folder from the previous step.
 
-6. Open the `sigopt_example.m` script and update it to include your (SigOpt API token)[https://sigopt.com/tokens/info].
+6. Open the `sigopt_example.m` script and update it to include your [SigOpt API token](https://sigopt.com/tokens/info).
 
 7. Within Matlab, run the `sigopt_example.m` script 
 
