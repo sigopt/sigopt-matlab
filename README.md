@@ -65,3 +65,7 @@ Make sure the path to the `sigopt` python package is in py.sys.path:
    - On Windows, you may want to run `insert(py.sys.path, int32(0), 'C:\python27/site-packages')`
 
 For more information on integrating Python with Matlab, visit the [Matlab Python docs](https://www.mathworks.com/help/matlab/matlab_external/undefined-variable-py-or-function-py-command.html).
+
+General Information
+========
+Repository: 2018-2023
